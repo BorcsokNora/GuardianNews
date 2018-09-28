@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Guardian News</string>
+    <string name="author_pre_tag">by\u0020</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="empty_list">No article to be shown</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_menu_item">Settings</string>
+
+    <string name="base_url">http://content.guardianapis.com/search</string>
+
+
+    <!-- PREFERENCES -->
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_value</string>
+
+    <!-- Label for order-by oldest publishing date option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">Oldest</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">Newest</string>
+
+    <!-- Label for list item limit option [CHAR LIMIT=20] -->
+    <string name="settings_list_items_limit_label">Articles per category</string>
+    <string name="settings_list_items_limit_key">list_limit</string>
+    <string name="settings_list_items_limit_default">5</string>
+
+    <!-- Label for category selector option -->
+    <string name="settings_select_category_label">Categories</string>
+    <string name="settings_select_category_key" translatable="false">selected_categories</string>
+
+    <!-- Keys used for identifying categories when creating query url in onCreateLoader -->
+    <string name="settings_category_science_key" translatable="false">science</string>
+    <string name="settings_category_technology_key" translatable="false">technology</string>
+    <string name="settings_category_cities_key" translatable="false">cities</string>
+    <string name="settings_category_globaldev_key" translatable="false">global-development</string>
+    <string name="settings_category_environment_key" translatable="false">environment</string>
+    <string name="settings_category_world_key" translatable="false">world</string>
+
+    <!-- Labels for categories -->
+    <string name="settings_category_world_label">World News</string>
+    <string name="settings_category_environment_label">Environment</string>
+    <string name="settings_category_globaldev_label">Global Development</string>
+    <string name="settings_category_cities_label">Cities</string>
+    <string name="settings_category_technology_label">Technology</string>
+    <string name="settings_category_science_label">Science</string>
+
+</resources>

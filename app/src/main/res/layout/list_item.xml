@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_s">
+
+    <View
+        android:id="@+id/color_indicator"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        tools:background="@color/colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_s"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="@dimen/margin_s"
+            android:textSize="@dimen/text_size_s"
+            tools:text="04-04-2018" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/date"
+            android:textSize="@dimen/text_size_s"
+            tools:text="15:42" />
+
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/text_size_s"
+            tools:text="Author's name comes here" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_m"
+            tools:text="category name" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category"
+            android:textSize="@dimen/text_size_l"
+            android:textStyle="bold"
+            tools:text="Title comes here that might be quite long" />
+
+        <TextView
+            android:id="@+id/trail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            tools:text="this is the trail text. a long-long text comes here that requires a lot of space." />
+
+
+    </RelativeLayout>
+</LinearLayout>
